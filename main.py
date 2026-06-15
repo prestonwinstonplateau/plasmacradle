@@ -1,6 +1,6 @@
-"""archiver_32305a - Decorator factory module."""
+"""archiver_2061bc - Decorator factory module."""
 import functools, time, json
-TAG = "archiver_32305a"
+TAG = "archiver_2061bc"
 def timed(label: str = ""):
     def decorator(func):
         @functools.wraps(func)
